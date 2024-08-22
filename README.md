@@ -2,6 +2,7 @@
 
 `kns` is a command line tool to interactively select and set Kubernetes namespaces.
 
+```bash
 ~$ kns
 Current namespace: default
 Pick your namespace:
@@ -11,24 +12,28 @@ kube-system
 my-namespace
 another-namespace
 exit
+```
 
 ## Install
 You can install from PyPI as follows:
 
+```bash
 $ pip install kns
+```
 
-Copy Code
 OR, clone the repo:
 
+```bash
 $ git clone https://github.com/roubles/kns
 $ cd kns
 $ pip install .
-
+```
 
 Copy Code
 
 ## Usage
 
+```bash
 usage: kns [-h] [--list] [substring]
 
 
@@ -42,7 +47,7 @@ substring substring to filter namespaces (must match from the beginning)
 optional arguments:
 -h, --help show this help message and exit
 --list list namespaces instead of launching interactive menu
-
+```
 
 ### Example
 
@@ -50,11 +55,15 @@ optional arguments:
 
 To run `kns` and select a namespace interactively:
 
+```bash
 $ kns
+```
 
 To run `kns` and set the namespace directly if there is an exact match:
 
+```
 $ kns my-namespace
+```
 
 If there are multiple matches, it will show a menu to select from.
 
@@ -62,11 +71,15 @@ If there are multiple matches, it will show a menu to select from.
 
 To list namespaces:
 
+```bash
 $ kns --list
+```
 
 To list namespaces with a filter:
 
+```bash
 $ kns --list ku
+```
 
 This will list namespaces that start with "ku".
 
