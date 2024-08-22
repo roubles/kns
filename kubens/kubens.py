@@ -2,10 +2,6 @@
 
 import os
 import sys
-if sys.version_info < (2,7):
-    print("kubenamespace needs Python 2.7 to run, please upgrade")
-    sys.exit(7)
-
 from subprocess import check_output, call
 from pick import pick
 import argparse
@@ -65,7 +61,7 @@ def getAbsolutePath (path):
 def setupParser ():
     parser = argparse.ArgumentParser(description='interactively pick a k8s namespace')
     parser.add_argument('substring', nargs='?', help="substring to filter namespaces", default="")
-    parser.add_argument('--list', action='store_true', help="list namespaces instead of launching interactive menu")
+    parser.add_argument('-l', '--list', action='store_true', help="list namespaces instead of launching interactive menu")
     return parser
 
 def isBlank (myString):
