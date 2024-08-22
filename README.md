@@ -95,4 +95,4 @@ This will list namespaces that start with "ku".
 - `pick` library (installed automatically with `pip install kubens`)
 
 ### License
-This project is licensed under the Creative Commons Attribution-Noncommercial-Share Alike license.
+This project is licensed under the MIT license.

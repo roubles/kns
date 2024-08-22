@@ -8,7 +8,7 @@ import pprint
 import subprocess
 import getpass
 
-__version__ = '1.2.1'
+__version__ = '1.2.3'
 
 class Doc(Command):
     description = "Custom doc command that converts README.md to the reStructured text file README.txt"
@@ -90,8 +90,9 @@ setup(
     author_email='rouble@gmail.com',
     url='https://github.com/roubles/kubens',
     download_url='https://github.com/roubles/kubens/tarball/' + __version__,
-    license='Creative Commons Attribution-Noncommercial-Share Alike license',
-    description='terminal kubectl namespace selector',
+    license='MIT',
+    license_files=('LICENSE',),
+    description='Terminal kubectl namespace selector',
     long_description=open('README.txt').read(),
     long_description_content_type='text/x-rst',
     packages=['kubens'],
