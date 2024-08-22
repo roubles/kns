@@ -8,7 +8,7 @@ import pprint
 import subprocess
 import getpass
 
-__version__ = '1.2.3'
+__version__ = '1.2.5'
 
 class Doc(Command):
     description = "Custom doc command that converts README.md to the reStructured text file README.txt"
